@@ -49,15 +49,15 @@ public class PubSubActivity extends Activity {
 
     // IoT endpoint
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com
-    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "CHANGE_ME";
+    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "a2ic1bnhyemh9f.iot.us-west-2.amazonaws.com";
     // Cognito pool ID. For this app, pool needs to be unauthenticated pool with
     // AWS IoT permissions.
-    private static final String COGNITO_POOL_ID = "CHANGE_ME";
+    private static final String COGNITO_POOL_ID =  "us-west-2:5a62d66c-e0d0-450e-9b63-77d5698597d3";
     // Name of the AWS IoT policy to attach to a newly created certificate
-    private static final String AWS_IOT_POLICY_NAME = "CHANGE_ME";
+    private static final String AWS_IOT_POLICY_NAME = "PetFeeder_policy";
 
     // Region of AWS IoT
-    private static final Regions MY_REGION = Regions.US_EAST_1;
+    private static final Regions MY_REGION = Regions.US_WEST_2;
     // Filename of KeyStore file on the filesystem
     private static final String KEYSTORE_NAME = "iot_keystore";
     // Password for the private key in the KeyStore
